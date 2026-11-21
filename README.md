@@ -24,9 +24,9 @@ O ambiente foi virtualizado no **Oracle VirtualBox** com isolamento total da red
 
 Para aplicar o **Princípio do Menor Privilégio** e conter possíveis invasões, foram implementadas as seguintes regras:
 
-1. **NAT / Port Forwarding (WAN → DMZ):** Redirecionamento controlado das requisições externas direcionadas ao IP da WAN do pfSense (`10.10.10.3`) para o servidor web na DMZ (`192.168.20.10`), ocultando a topologia interna.
-2. **Bloqueio de Movimentação Lateral (`Block DMZ net → LAN net`):** Regra posicionada no topo da interface DMZ proibindo que qualquer servidor comprometido na zona desmilitarizada inicie conexões com a rede interna (`LAN`), com registro de logs ativado.
-3. **Acesso Administrativo Restrito:** O painel web do pfSense (`HTTPS/443`) permanece acessível apenas a partir da rede interna (`LAN`), bloqueado para a `WAN` e `DMZ`.
+. **NAT / Port Forwarding (WAN → DMZ):** Redirecionamento controlado das requisições externas direcionadas ao IP da WAN do pfSense (`10.10.10.3`) para o servidor web na DMZ (`192.168.20.10`), ocultando a topologia interna.
+. **Bloqueio de Movimentação Lateral (`Block DMZ net → LAN net`):** Regra posicionada no topo da interface DMZ proibindo que qualquer servidor comprometido na zona desmilitarizada inicie conexões com a rede interna (`LAN`), com registro de logs ativado.
+. **Acesso Administrativo Restrito:** O painel web do pfSense (`HTTPS/443`) permanece acessível apenas a partir da rede interna (`LAN`), bloqueado para a `WAN` e `DMZ`.
 
 <img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/f920790a-445d-4e9e-8328-c769c092585e" />
 
