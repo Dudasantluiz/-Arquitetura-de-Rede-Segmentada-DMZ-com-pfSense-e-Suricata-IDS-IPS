@@ -62,8 +62,8 @@ Simulando um cenário pós-exploração onde o atacante obteve acesso ao servido
 ## 🛡️ 4. Resposta a Incidentes e Prevenção Ativa (IPS)
 
 Como ação de resposta imediata para neutralizar o ataque em andamento:
-1. O Suricata foi alternado de modo **IDS** (apenas monitoramento) para **IPS** (*Block Offenders* + *Kill States* ativados).
-2. Ao tentar executar novamente a exploração a partir do Kali Linux (`10.10.10.4`), o tráfego foi derrubado automaticamente em tempo real, impedindo novas requisições ao servidor web.
+. O Suricata foi alternado de modo **IDS** (apenas monitoramento) para **IPS** (*Block Offenders* + *Kill States* ativados).
+. Ao tentar executar novamente a exploração a partir do Kali Linux (`10.10.10.4`), o tráfego foi derrubado automaticamente em tempo real, impedindo novas requisições ao servidor web.
 
 <img width="1280" height="780" alt="image" src="https://github.com/user-attachments/assets/d44f016d-afff-4ecd-a299-64c47a9d8d92" />
 
